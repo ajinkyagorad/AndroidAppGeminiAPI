@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import com.example.geminiapi.ui.theme.GeminiAPITheme
 
 enum class Screen {
-    MAIN_MENU, BAKING, AI_AGENT
+    MAIN_MENU, BAKING, AI_AGENT, SCI_FI_PLOT
 }
 
 class MainActivity : ComponentActivity() {
@@ -29,13 +29,17 @@ class MainActivity : ComponentActivity() {
                     when (currentScreen) {
                         Screen.MAIN_MENU -> MainMenuScreen(
                             onNavigateToBaking = { currentScreen = Screen.BAKING },
-                            onNavigateToAIAgent = { currentScreen = Screen.AI_AGENT }
+                            onNavigateToAIAgent = { currentScreen = Screen.AI_AGENT },
+                            onNavigateToSciFiPlot = { currentScreen = Screen.SCI_FI_PLOT }
                         )
                         Screen.BAKING -> BakingScreen(
                             onNavigateToAIAgent = { currentScreen = Screen.AI_AGENT }
                         )
                         Screen.AI_AGENT -> AIAgentScreen(
                             onNavigateToBaking = { currentScreen = Screen.BAKING }
+                        )
+                        Screen.SCI_FI_PLOT -> SciFiPlotScreen(
+                            onNavigateBack = { currentScreen = Screen.MAIN_MENU }
                         )
                     }
                 }

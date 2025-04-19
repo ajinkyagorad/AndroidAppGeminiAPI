@@ -8,6 +8,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Cake
 import androidx.compose.material.icons.filled.Chat
+import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,7 +27,8 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun MainMenuScreen(
     onNavigateToBaking: () -> Unit,
-    onNavigateToAIAgent: () -> Unit
+    onNavigateToAIAgent: () -> Unit,
+    onNavigateToSciFiPlot: () -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -175,6 +177,59 @@ fun MainMenuScreen(
                             text = "Chat with AI, use camera, and get real-time responses",
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSecondaryContainer.copy(alpha = 0.8f)
+                        )
+                    }
+                }
+            }
+            
+            // SciFi Plot Visualization Card
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(160.dp)
+                    .clip(RoundedCornerShape(16.dp))
+                    .clickable { onNavigateToSciFiPlot() },
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.tertiaryContainer.copy(alpha = 0.9f)
+                )
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxSize(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    // Icon
+                    Box(
+                        modifier = Modifier
+                            .padding(16.dp)
+                            .size(80.dp)
+                            .clip(RoundedCornerShape(12.dp))
+                            .background(MaterialTheme.colorScheme.tertiary.copy(alpha = 0.2f)),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Explore,
+                            contentDescription = "SciFi Plot Visualization",
+                            tint = MaterialTheme.colorScheme.tertiary,
+                            modifier = Modifier.size(48.dp)
+                        )
+                    }
+                    
+                    // Text
+                    Column(
+                        modifier = Modifier.padding(16.dp)
+                    ) {
+                        Text(
+                            text = "SciFi Plot Visualizer",
+                            style = MaterialTheme.typography.titleLarge,
+                            color = MaterialTheme.colorScheme.onTertiaryContainer
+                        )
+                        
+                        Spacer(modifier = Modifier.height(8.dp))
+                        
+                        Text(
+                            text = "Explore interactive holographic visualizations of sci-fi narratives",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onTertiaryContainer.copy(alpha = 0.8f)
                         )
                     }
                 }
