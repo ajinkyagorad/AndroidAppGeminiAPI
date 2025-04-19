@@ -134,7 +134,7 @@ fun SciFiPlotScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(16.dp)
+                .padding(16.dp, 16.dp, 16.dp, 32.dp) // Added extra bottom padding
         ) {
             // Top bar
             Row(
@@ -857,7 +857,7 @@ fun SciFiPlotScreen(
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 16.dp)
+                    .padding(top = 16.dp, bottom = 24.dp) // Added bottom padding to avoid system navigation bar
                     .height(60.dp)
                     .clip(RoundedCornerShape(30.dp))
                     .background(SpaceBlue.copy(alpha = 0.7f)),
