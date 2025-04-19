@@ -46,7 +46,11 @@ The application features a futuristic holographic design with:
 
 ## Screenshots
 
-[Screenshots will be added soon]
+<div align="center">
+  <img src="screenshots/screenshot1.jpg" alt="Main Menu Screen" width="250"/>
+  <img src="screenshots/screenshot2.jpg" alt="AI Agent Screen" width="250"/>
+  <img src="screenshots/screenshot3.jpg" alt="Baking Assistant Screen" width="250"/>
+</div>
 
 ## License
 
