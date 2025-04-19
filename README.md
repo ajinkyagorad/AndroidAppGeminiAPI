@@ -16,6 +16,13 @@ A cutting-edge Android application showcasing Google's Gemini AI capabilities wi
 - Multimodal AI interactions
 - Visual food recognition
 
+### SciFi Plot Visualization
+- Six interactive visualization types
+- Holographic, animated UI elements
+- Canvas-based custom drawings
+- Dynamic scaling and transformation
+- Sci-fi themed color palette
+
 ## Technical Components
 
 - **Language**: Kotlin
@@ -50,6 +57,19 @@ The application features a futuristic holographic design with:
   <img src="screenshots/screenshot1.jpg" alt="Main Menu Screen" width="250"/>
   <img src="screenshots/screenshot2.jpg" alt="AI Agent Screen" width="250"/>
   <img src="screenshots/screenshot3.jpg" alt="Baking Assistant Screen" width="250"/>
+</div>
+
+### SciFi Plot Visualization Screens
+
+<div align="center">
+  <img src="screenshots/screenshot4.jpg" alt="Galactic Timeline Arc" width="250"/>
+  <img src="screenshots/screenshot5.jpg" alt="Character Relationship Web" width="250"/>
+  <img src="screenshots/screenshot6.jpg" alt="Tech Tree Evolution" width="250"/>
+</div>
+
+<div align="center">
+  <img src="screenshots/screenshot7.jpg" alt="Stellar Conflict Map" width="250"/>
+  <img src="screenshots/screenshot8.jpg" alt="Planetary World-Builder" width="250"/>
 </div>
 
 ## License
